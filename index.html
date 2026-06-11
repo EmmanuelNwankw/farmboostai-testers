@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Modus FarmBoost AI</title>
+  <meta name="description" content="Privacy Policy for Modus FarmBoost AI mobile application." />
+  <style>
+    :root {
+      --green-dark: #071407;
+      --green-mid:  #0d2b0d;
+      --green-accent: #22c55e;
+      --gold: #f5c842;
+      --text: #e8f5e9;
+      --muted: #9ba1a6;
+      --surface: #112211;
+      --border: #1e3a1e;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--green-dark);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #071407 0%, #0d2b0d 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .logo-box {
+      width: 52px; height: 52px;
+      background: var(--green-accent);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px;
+    }
+
+    .brand-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--green-accent);
+      letter-spacing: 0.5px;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 8px;
+    }
+
+    .effective-date {
+      display: inline-block;
+      margin-top: 10px;
+      background: rgba(245,200,66,.15);
+      border: 1px solid rgba(245,200,66,.3);
+      color: var(--gold);
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .toc h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--green-accent);
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+    }
+
+    .toc a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 15px;
+      transition: color .2s;
+    }
+
+    .toc a:hover { color: var(--green-accent); }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 48px;
+    }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--green-accent);
+      border-left: 4px solid var(--green-accent);
+      padding-left: 14px;
+      margin-bottom: 18px;
+    }
+
+    section h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gold);
+      margin: 20px 0 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #d4e8d4;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      color: #d4e8d4;
+    }
+
+    /* ── Data Table ── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    .data-table th {
+      background: var(--surface);
+      color: var(--green-accent);
+      padding: 10px 14px;
+      text-align: left;
+      border: 1px solid var(--border);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .data-table td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      color: #d4e8d4;
+      vertical-align: top;
+    }
+
+    .data-table tr:nth-child(even) td {
+      background: rgba(34,197,94,.04);
+    }
+
+    /* ── Callout box ── */
+    .callout {
+      background: rgba(34,197,94,.08);
+      border: 1px solid rgba(34,197,94,.25);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+
+    .callout.warn {
+      background: rgba(245,200,66,.08);
+      border-color: rgba(245,200,66,.25);
+    }
+
+    .callout p { margin: 0; font-size: 15px; }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 16px;
+    }
+
+    .contact-card p { margin-bottom: 6px; }
+
+    .contact-card a {
+      color: var(--green-accent);
+      text-decoration: none;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--green-accent); text-decoration: none; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      .container { padding: 32px 16px 60px; }
+      .data-table { font-size: 13px; }
+      .data-table th, .data-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header>
+  <div class="logo-row">
+    <div class="logo-box">🌿</div>
+    <div>
+      <div class="brand-sub">Modus</div>
+      <div class="brand-name">FarmBoost AI</div>
+    </div>
+  </div>
+  <h1>Privacy Policy</h1>
+  <span class="effective-date">Effective Date: 25 May 2026 &nbsp;·&nbsp; Version 1.0</span>
+</header>
+
+<!-- ══════════════ CONTAINER ══════════════ -->
+<div class="container">
+
+  <div class="callout">
+    <p>Your privacy matters to us. This policy explains what data Modus FarmBoost AI collects, why we collect it, how we use it, and your rights as a user. Please read it carefully before using the app.</p>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#about">About This Policy</a></li>
+      <li><a href="#data-collected">Data We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Data</a></li>
+      <li><a href="#sharing">How We Share Your Data</a></li>
+      <li><a href="#permissions">Device Permissions</a></li>
+      <li><a href="#storage">Data Storage &amp; Security</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <!-- 1. ABOUT -->
+  <section id="about">
+    <h2>1. About This Policy</h2>
+    <p>This Privacy Policy applies to the <strong>Modus FarmBoost AI</strong> mobile application ("the App"), developed and operated by <strong>Modus Technology</strong> ("we", "us", or "our"). The App is designed to support Nigerian farmers with AI-powered tools including crop disease scanning, satellite farm mapping, market price information, loan and credit management, farm financial records, and multilingual voice assistance.</p>
+    <p>By downloading, installing, or using the App, you agree to the collection and use of information as described in this policy. If you do not agree, please do not use the App.</p>
+  </section>
+
+  <!-- 2. DATA COLLECTED -->
+  <section id="data-collected">
+    <h2>2. Data We Collect</h2>
+    <p>We collect the following categories of data to provide and improve the App's features:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Data Collected</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Location Data</strong></td>
+          <td>GPS coordinates, farm boundary polygon points, device location</td>
+          <td>Satellite farm mapping, land size calculation, agro-zone detection, planting calendar</td>
+        </tr>
+        <tr>
+          <td><strong>Camera &amp; Images</strong></td>
+          <td>Photos taken via camera or selected from gallery</td>
+          <td>AI crop disease scanning, farm profile photo attachment</td>
+        </tr>
+        <tr>
+          <td><strong>Voice &amp; Audio</strong></td>
+          <td>Voice recordings captured during voice note or voice command sessions</td>
+          <td>Speech-to-text transcription, voice command navigation, multilingual TTS responses</td>
+        </tr>
+        <tr>
+          <td><strong>Financial Data</strong></td>
+          <td>Income and expense entries, loan application details, repayment schedules, monthly budget</td>
+          <td>Farm ledger, loan tracker, repayment calendar, credit score calculation</td>
+        </tr>
+        <tr>
+          <td><strong>Farm Profile</strong></td>
+          <td>Farm name, state, LGA, crop type, estimated yield, GPS boundary, land area (hectares)</td>
+          <td>Farm verification report, Fintech loan vetting, planting calendar personalisation</td>
+        </tr>
+        <tr>
+          <td><strong>Scan History</strong></td>
+          <td>Crop name, disease diagnosis, confidence score, treatment advice, scan timestamp</td>
+          <td>Offline scan result cache, scan detail screen, push notifications</td>
+        </tr>
+        <tr>
+          <td><strong>Device Information</strong></td>
+          <td>Device model, OS version, app version, language preference</td>
+          <td>Bug diagnostics, app compatibility, dialect auto-detection</td>
+        </tr>
+        <tr>
+          <td><strong>Usage Data</strong></td>
+          <td>Screens visited, features used, session duration</td>
+          <td>App improvement, feature prioritisation</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Data You Provide Directly</h3>
+    <p>When you use the App, you may voluntarily provide information such as your name, phone number, state, LGA, crop type, loan details, and income/expense records. This information is stored locally on your device and, where applicable, on our secure servers.</p>
+
+    <h3>Data Collected Automatically</h3>
+    <p>The App automatically collects certain technical data when you use it, including device identifiers, crash reports, and feature usage statistics. This data is anonymised and used solely for improving the App.</p>
+  </section>
+
+  <!-- 3. HOW WE USE -->
+  <section id="how-we-use">
+    <h2>3. How We Use Your Data</h2>
+    <p>We use the data we collect for the following purposes:</p>
+    <ul>
+      <li><strong>Providing core features</strong> — crop scanning, satellite farm mapping, market prices, loan tools, ledger, planting calendar, and voice assistance.</li>
+      <li><strong>Generating your Farm Credit Score</strong> — using farm activity, loan history, profile completeness, and financial records to calculate a composite creditworthiness score.</li>
+      <li><strong>Producing Farm Verification Reports</strong> — generating GPS-verified reports for partner Fintech lenders (Moniepoint, NIRSAL MFB, Bank of Agriculture, etc.) when you choose to share them.</li>
+      <li><strong>Sending push notifications</strong> — scan result summaries, loan status updates, repayment reminders, budget alerts, and planting date reminders.</li>
+      <li><strong>Improving the App</strong> — analysing anonymised usage patterns to fix bugs and add new features.</li>
+      <li><strong>Complying with legal obligations</strong> — where required by Nigerian law or regulatory bodies.</li>
+    </ul>
+
+    <div class="callout warn">
+      <p>⚠️ We do <strong>not</strong> use your data for advertising, sell your data to third parties, or share your financial or health data without your explicit consent.</p>
+    </div>
+  </section>
+
+  <!-- 4. SHARING -->
+  <section id="sharing">
+    <h2>4. How We Share Your Data</h2>
+    <p>We do not sell, rent, or trade your personal data. We may share data only in the following limited circumstances:</p>
+
+    <h3>With Fintech Partners (With Your Consent)</h3>
+    <p>When you tap "Send to Moniepoint", "Send to NIRSAL MFB", or similar buttons in the App, you are choosing to share your Farm Verification Report with that specific partner. This is always an explicit, user-initiated action. We do not share your data with any Fintech partner without your direct action.</p>
+
+    <h3>With Service Providers</h3>
+    <p>We use trusted third-party service providers to operate the App, including cloud hosting, AI inference, and push notification delivery. These providers are contractually bound to process your data only as instructed by us and may not use it for their own purposes.</p>
+
+    <h3>For Legal Compliance</h3>
+    <p>We may disclose your data if required to do so by law, court order, or a competent Nigerian regulatory authority, or to protect the rights, property, or safety of Modus Technology, our users, or the public.</p>
+
+    <h3>Business Transfers</h3>
+    <p>In the event of a merger, acquisition, or sale of assets, your data may be transferred to the acquiring entity, subject to the same privacy protections described in this policy.</p>
+  </section>
+
+  <!-- 5. PERMISSIONS -->
+  <section id="permissions">
+    <h2>5. Device Permissions</h2>
+    <p>The App requests the following device permissions. You can manage these at any time in your device settings:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why It Is Needed</th>
+          <th>Optional?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Camera</strong></td>
+          <td>Take photos of crops for AI disease scanning; attach farm photos to profile</td>
+          <td>No — core feature</td>
+        </tr>
+        <tr>
+          <td><strong>Microphone</strong></td>
+          <td>Record voice notes and voice commands for multilingual navigation and transcription</td>
+          <td>Yes — voice features only</td>
+        </tr>
+        <tr>
+          <td><strong>Location (Fine)</strong></td>
+          <td>Detect current GPS position for satellite farm mapping and boundary drawing</td>
+          <td>Yes — map feature only</td>
+        </tr>
+        <tr>
+          <td><strong>Photo Library / Storage</strong></td>
+          <td>Select existing photos from gallery for crop scanning or farm profile</td>
+          <td>Yes — gallery upload only</td>
+        </tr>
+        <tr>
+          <td><strong>Notifications</strong></td>
+          <td>Send scan results, loan updates, repayment reminders, and planting alerts</td>
+          <td>Yes — notifications only</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Denying a permission will disable the specific feature that requires it but will not prevent you from using other parts of the App.</p>
+  </section>
+
+  <!-- 6. STORAGE & SECURITY -->
+  <section id="storage">
+    <h2>6. Data Storage &amp; Security</h2>
+
+    <h3>Local Storage</h3>
+    <p>Most of your data — including farm profiles, scan history, financial records, and voice preferences — is stored locally on your device using encrypted AsyncStorage. This means your data remains on your phone even when you are offline.</p>
+
+    <h3>Server Storage</h3>
+    <p>Data that requires cloud processing (such as AI crop scan analysis and credit score calculation) is transmitted to our secure servers over HTTPS/TLS encryption. We do not store raw voice recordings on our servers beyond the time needed to process your request.</p>
+
+    <h3>Security Measures</h3>
+    <p>We implement industry-standard security measures including end-to-end encryption for data in transit, encrypted storage at rest, access controls, and regular security audits. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+  </section>
+
+  <!-- 7. RETENTION -->
+  <section id="retention">
+    <h2>7. Data Retention</h2>
+    <p>We retain your data for as long as necessary to provide the App's services or as required by law. Specifically:</p>
+    <ul>
+      <li><strong>Local device data</strong> — retained until you delete the App or clear the App's data in your device settings.</li>
+      <li><strong>Server-side data</strong> — retained for a maximum of 24 months from your last active use of the App, after which it is permanently deleted.</li>
+      <li><strong>Voice recordings</strong> — deleted from our servers immediately after transcription is complete (typically within seconds).</li>
+      <li><strong>Anonymised usage analytics</strong> — may be retained indefinitely in aggregated, non-identifiable form.</li>
+    </ul>
+    <p>You may request deletion of your data at any time by contacting us at the address below.</p>
+  </section>
+
+  <!-- 8. CHILDREN -->
+  <section id="children">
+    <h2>8. Children's Privacy</h2>
+    <p>The App is intended for use by adults (18 years and older) and farmers operating agricultural businesses. We do not knowingly collect personal data from children under the age of 13. If you believe a child has provided us with personal information, please contact us immediately and we will delete it promptly.</p>
+  </section>
+
+  <!-- 9. RIGHTS -->
+  <section id="rights">
+    <h2>9. Your Rights</h2>
+    <p>As a user of the App, you have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Right to Access</strong> — You may request a copy of the personal data we hold about you.</li>
+      <li><strong>Right to Correction</strong> — You may request that we correct inaccurate or incomplete data.</li>
+      <li><strong>Right to Deletion</strong> — You may request that we delete your personal data ("right to be forgotten").</li>
+      <li><strong>Right to Withdraw Consent</strong> — Where processing is based on consent (e.g. location, microphone), you may withdraw consent at any time via your device settings.</li>
+      <li><strong>Right to Data Portability</strong> — You may request your data in a structured, machine-readable format.</li>
+      <li><strong>Right to Object</strong> — You may object to the processing of your data for certain purposes.</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us using the details in Section 12. We will respond to all requests within 30 days.</p>
+  </section>
+
+  <!-- 10. THIRD PARTY -->
+  <section id="third-party">
+    <h2>10. Third-Party Services</h2>
+    <p>The App integrates with the following third-party services. Each has its own privacy policy which we encourage you to review:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Purpose</th>
+          <th>Data Shared</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Maps / Expo Maps</td>
+          <td>Satellite map display and GPS boundary drawing</td>
+          <td>GPS coordinates (anonymised)</td>
+        </tr>
+        <tr>
+          <td>Africa's Talking</td>
+          <td>SMS delivery for farm verification reports</td>
+          <td>Phone number, report text</td>
+        </tr>
+        <tr>
+          <td>WhatsApp (via deep-link)</td>
+          <td>Sharing scan results and verification reports</td>
+          <td>Pre-filled message text only</td>
+        </tr>
+        <tr>
+          <td>Expo Notifications</td>
+          <td>Local and push notification delivery</td>
+          <td>Device push token</td>
+        </tr>
+        <tr>
+          <td>Moniepoint / NIRSAL MFB</td>
+          <td>Loan application deep-link (user-initiated only)</td>
+          <td>Farm size, state, crop (only when you tap "Send")</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>We are not responsible for the privacy practices of third-party services. Links to third-party sites or services from within the App are provided for your convenience only.</p>
+  </section>
+
+  <!-- 11. CHANGES -->
+  <section id="changes">
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the App's features, legal requirements, or our data practices. When we make material changes, we will notify you through the App (via a push notification or in-app banner) and update the "Effective Date" at the top of this page.</p>
+    <p>Your continued use of the App after any changes constitutes your acceptance of the updated policy. We encourage you to review this page periodically.</p>
+  </section>
+
+  <!-- 12. CONTACT -->
+  <section id="contact">
+    <h2>12. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+
+    <div class="contact-card">
+      <p><strong>Modus Technology</strong></p>
+      <p>📧 Email: <a href="mailto:privacy@farmboostai.com">privacy@farmboostai.com</a></p>
+      <p>🌐 Website: <a href="https://farmboostai.com" target="_blank">farmboostai.com</a></p>
+      <p>📍 Address: Nigeria</p>
+      <p style="margin-top:12px; color: var(--muted); font-size:14px;">We aim to respond to all privacy-related enquiries within <strong>5 business days</strong>.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <p>© 2026 Modus Technology. All rights reserved.</p>
+  <p style="margin-top:6px;">
+    <a href="https://farmboostai.com">farmboostai.com</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:privacy@farmboostai.com">privacy@farmboostai.com</a>
+  </p>
+  <p style="margin-top:10px; font-size:12px; color:#4a6a4a;">
+    This privacy policy was last reviewed on 25 May 2026.
+  </p>
+</footer>
+
+</body>
+</html>
